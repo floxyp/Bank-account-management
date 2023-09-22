@@ -1,0 +1,28 @@
+Bank Account Management Website
+This web application simulates basic bank account management functionalities using JavaScript. It allows users to perform three main operations: deposit, withdraw, and check the account balance.
+
+Instructions
+Opening the Website: Simply open the HTML file (e.g., index.html) in a web browser to access the Bank Account Management website.
+
+Account Details: The website displays initial account details, including the account holder's name, account type, and current balance.
+
+Transaction Section: In the "Transaction" section, you can perform the following actions:
+
+Amount: Enter the amount you want to deposit or withdraw. Ensure it's a positive number.
+Transaction Type: Select the desired transaction type from the dropdown menu: "Deposit," "Withdraw," or "Check Balance."
+Submit: Click the "Submit" button to execute the selected transaction.
+Transaction Result: The "Transaction Result" section displays the outcome of your transaction:
+
+The transaction status (success or error message).
+The new balance after the transaction (if applicable).
+Code Walkthrough
+Classes
+We created a JavaScript class BankAccount to represent the bank account, which contains properties like accountHolder, accountType, and balance. This class also includes methods for deposit and withdrawal.
+Switch Statements
+The performTransaction function uses a switch statement to handle different transaction types: deposit, withdraw, and check balance. Depending on the selected type, it calls the respective methods of the BankAccount class.
+Try-Catch-Finally Statements
+Exception handling is implemented using try-catch blocks. For example, if the user tries to withdraw more money than the account balance, an error message is displayed. The catch block catches exceptions and displays them to the user.
+Input Clearing
+After each transaction, the input field for the transaction amount is cleared, making it convenient for users to perform subsequent transactions.
+This website provides a simple, interactive way to understand and practice JavaScript concepts like classes, switch statements, and error handling while simulating basic bank account management. Feel free to customize and enhance it further according to your needs or for educational purposes.
+
